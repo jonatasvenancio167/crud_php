@@ -3,6 +3,7 @@
 
     $id = $_GET['id'];
     $query = "SELECT * FROM funcionario WHERE id = $id";
+    
     $sql = mysqli_query($conexao, $query) or die("Erro");
     while($dados=mysqli_fetch_assoc($sql)){
         $id = $dados['id'];
